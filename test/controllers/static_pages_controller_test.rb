@@ -4,7 +4,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   test "should get home" do
     get :home
     assert_response :success
-    assert_select "title", "Home | ZEFR ProjectID"
+    assert_select "title", "ZEFR ProjectID"
   end
 
   test "should get help" do
@@ -18,5 +18,4 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
     assert_select "title", "About | ZEFR ProjectID"
   end
-
 end
